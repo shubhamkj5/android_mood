@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background1"
+    android:orientation="vertical" >
+
+    <TextView
+        android1:id="@+id/textViewChooseTheme"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android:gravity="center"
+        android1:text="@string/choose_a_theme"
+        android:textColor="@color/Blue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroupSettings"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <RadioButton
+            android1:id="@+id/radioSettings1"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="@string/theme1"
+             />
+
+        <RadioButton
+            android1:id="@+id/radioSettings2"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:text="@string/theme2"
+             />
+
+        <RadioButton
+            android1:id="@+id/radioSettings3"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:text="@string/theme3"
+             />
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/textViewNotificationSound"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android:gravity="center"
+        android1:text="@string/notification_sound"
+        android:textColor="@color/Blue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <CheckBox
+        android1:id="@+id/checkBoxSound"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:text="@string/enable"
+         />
+    
+    <Button
+        android:id="@+id/dialogButtonSettingsOK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textColor="@color/Blue" />
+
+</LinearLayout>

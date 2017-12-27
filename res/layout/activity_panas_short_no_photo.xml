@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Silver"
+    android:weightSum="100"
+     >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="20" >
+
+	    <TextView
+	        android:id="@+id/panasShortQuestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:text="@string/panas_short_question"
+	        android:textColor="@color/Blue" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        android:layout_marginLeft="5dp"
+	        android:orientation="horizontal"
+	        android:textColor="@color/Blue">
+        	
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasShortExplaination1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_short_explaination1"
+			        android:textColor="@color/Blue" />
+			</LinearLayout>
+			
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasShortExplaination2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_short_explaination2"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			         android:id="@+id/panasShortExplaination3"
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:text="@string/panas_short_explaination3"
+			         android:textColor="@color/Blue" />
+			</LinearLayout>
+	     </LinearLayout>
+	     
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:weightSum="3">
+        	
+		     <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasShortExplaination4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_short_explaination4"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+		      <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasShortExplaination5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_short_explaination5"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+	     </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewPANASShortUpset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/upset"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortUpset"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortHostile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/hostile"
+                android:textColor="@color/Blue" />
+
+			<SeekBar
+                android:id="@+id/seekBarPANASShortHostile"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+			                        
+            <TextView
+                android:id="@+id/textViewPANASShortAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/alert"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortAlert"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortAshamed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/ashamed"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortAshamed"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortInspired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/inspired"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortInspired"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViePANASShortNervous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/nervous"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortNervous"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortDetermined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/determined"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortDetermined"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortAttentive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/attentive"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortAttentive"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortAfraid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/afraid"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortAfraid"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <TextView
+                android:id="@+id/textViewPANASShortActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/active"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASShortActive"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonNotePANASShortNoPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSharePANASShortNoPhoto"
+        	android:layout_alignBottom="@+id/buttonSharePANASShortNoPhoto"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/note_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonSharePANASShortNoPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSavePANASShortNoPhoto"
+        	android:layout_alignBottom="@+id/buttonSavePANASShortNoPhoto"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="40dp"
+            android:background="@drawable/share_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonSavePANASShortNoPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginBottom="18dp"
+        	android:layout_marginLeft="40dp"
+        	android:background="@drawable/save_icon_effect"
+             />
+
+    </RelativeLayout>
+    
+</LinearLayout>

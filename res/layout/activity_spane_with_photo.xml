@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/Silver"
+     >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="20" >
+
+	    <TextView
+	        android:id="@+id/spaneWithPhotoQuestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:textColor="@color/Blue"
+	        android:text="@string/spane_question" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="9"
+	        android:layout_marginLeft="5dp"
+	        android:orientation="horizontal">
+        	
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4">
+			     <TextView
+			        android:id="@+id/spaneWithPhotoExplaination1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/spane_explaination1"
+			        android:textColor="@color/Blue" />
+			</LinearLayout>
+			
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2">
+			     <TextView
+			        android:id="@+id/spaneWithPhotoExplaination2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/spane_explaination2"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3">
+			     <TextView
+			         android:id="@+id/spaneWithPhotoExplaination3"
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:text="@string/spane_explaination3"
+			         android:textColor="@color/Blue" />
+			</LinearLayout>
+	     </LinearLayout>
+	     
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:weightSum="4">
+        	
+		     <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/spaneWithPhotoExplaination4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/spane_explaination4"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+		      <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3">
+			     <TextView
+			        android:id="@+id/spaneWithPhotoExplaination5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/spane_explaination5"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+	     </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoPositive"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_positive3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoPositive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/positive"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoPositive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5"
+                 >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPositive1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPositive2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPositive3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPositive4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPositive5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoNegative"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_negative3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/negative"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoNegative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoNegative1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoNegative2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoNegative3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoNegative4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoNegative5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoGood"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_good3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoGood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/good"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoGood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoGood1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoGood2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoGood3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoGood4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoGood5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoBad"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_bad3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoBad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/bad"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoBad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoBad1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoBad2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoBad3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoBad4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoBad5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoPleasant"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_pleasant3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoPleasant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/pleasant"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoPleasant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPleasant1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPleasant2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPleasant3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPleasant4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoPleasant5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoUnpleasant"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_unpleasant3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoUnpleasant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/unpleasant"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoUnpleasant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoUnpleasant1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoUnpleasant2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoUnpleasant3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoUnpleasant4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoUnpleasant5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoHappy"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_happy3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/happy"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoHappy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoHappy1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoHappy2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoHappy3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoHappy4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoHappy5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoSad"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_sad3"
+		        >
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoSad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/sad"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoSad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoSad1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoSad2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoSad3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoSad4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoSad5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+                        
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoAfraid"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_afraid3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoAfraid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/afraid"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoAfraid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAfraid1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAfraid2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAfraid3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAfraid4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAfraid5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoJoyful"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_joyful3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoJoyful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/joyful"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoJoyful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoJoyful1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoJoyful2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoJoyful3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoJoyful4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoJoyful5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoAngry"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_angry3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoAngry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/angry"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoAngry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAngry1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAngry2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAngry3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAngry4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoAngry5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+            
+            <ImageView
+                android:id="@+id/imageViewSPANEWithPhotoContented"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/spane_contented3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewSPANEWithPhotoContented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/contented"
+                android:textColor="@color/Blue" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSPANEWithPhotoContented"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40dp"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoContented1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num1"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoContented2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num2"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoContented3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num3"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoContented4"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num4"
+                    android:textColor="@color/Blue" />
+
+                <RadioButton
+                    android:id="@+id/radioSPANEWithPhotoContented5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@android:drawable/btn_radio"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/num5"
+                    android:textColor="@color/Blue" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonNoteSPANEWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonShareSPANEWithPhoto"
+        	android:layout_alignBottom="@+id/buttonShareSPANEWithPhoto"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/note_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonShareSPANEWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSaveSPANEWithPhoto"
+        	android:layout_alignBottom="@+id/buttonSaveSPANEWithPhoto"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="40dp"
+            android:background="@drawable/share_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonSaveSPANEWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginBottom="18dp"
+        	android:layout_marginLeft="40dp"
+            android:background="@drawable/save_icon_effect"
+             />
+
+    </RelativeLayout>
+    
+</LinearLayout>

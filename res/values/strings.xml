@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mood Self-Assessment</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="welcome_message"><b>Welcome to mood diary</b></string>
+    
+    <string name="report_mood"><b>Add Mood</b></string>
+    <string name="affect_button"><b>AffectButton</b></string>
+    <string name="spane_with_photo"><b>SPANE (Photo)</b></string>
+    <string name="spane_no_photo"><b>SPANE</b></string>
+    <string name="panas_short_no_photo"><b>PANAS (Short)</b></string>
+    <string name="panas_long_with_photo"><b>PANAS</b></string>
+    <string name="pam"><b>PAM</b></string>
+    <string name="statistics"><b>Statistics</b></string>
+    <string name="export_to_pdf"><b>Export Mood History</b></string>
+    <string name="send_data"><b>Send Data</b></string>
+    <string name="settings"><b>Settings</b></string>
+    <string name="about"><b>About</b></string>
+    
+    <string name="affect_button_statistics"><b>AffectButton Statistics</b></string>
+    <string name="spane_with_photo_statistics"><b>SPANE (Photo) Statistics</b></string>
+    <string name="spane_no_photo_statistics"><b>SPANE Statistics</b></string>
+    <string name="panas_short_no_photo_statistics"><b>PANAS (Short) Statistics</b></string>
+    <string name="panas_long_with_photo_statistics"><b>PANAS Statistics</b></string>
+    <string name="pam_statistics"><b>PAM Statistics</b></string>
+    
+    <string name="choose_a_theme"><b>Choose a theme</b></string>
+    <string name="theme1"><b>Theme 1</b></string>
+    <string name="theme2"><b>Theme 2</b></string>
+    <string name="theme3"><b>Theme 3</b></string>
+    <string name="notification_sound"><b>Notification sound</b></string>
+    <string name="enable"><b>Enable</b></string>
+    
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="note">Note</string>
+    
+    <string name="what_is_mood_self_assessment"><b>What is Mood Self-Assessment?</b></string>
+    <string name="mood_self_assessment_description">- <b>Mood Self-Assessment</b> is used to record your mood. You can choose from various methods to report your mood at any time.\n\n- The methods used include <b>AffectButton</b>, <b>SPANE</b> (Scale of Positive and Negative Experience), <b>PANAS</b> (Positive and Negative Affect Schedule) and <b>PAM</b> (Photographic Affect Meter).\n\n- The app is developed as a part of Minor Project for Amplify Mindware Sem IV Examinations by \n SHUBHAM JAIN \n BSIT/15/008 \n 1715380006\n</string>
+    <string name="features"><b>Features</b></string>
+    <string name="features_description">- View statistics of your mood in the past through pie charts or bar charts.\n\n- Export a detailed report of your mood history in PDF form for your personal use.\n\n- Share your mood with your friends through various means such as Facebook, SMS or email, etc&#8230;</string>
+    
+    <string name="ok"><b>OK</b></string>
+    <string name="cancel"><b>Cancel</b></string>
+    
+    <string name="my_mood_greeting"><b>Move your finger to match your feeling</b></string>
+    <string name="my_mood_note"><b>What do you want to say?</b></string>
+    <string name="spane_question"><b>How much do you experience each of the following feelings?</b></string>
+    <string name="spane_explaination1"><b>1/ Very rare or never</b></string>
+    <string name="spane_explaination2"><b>2/ Rarely</b></string>
+    <string name="spane_explaination3"><b>3/ Sometimes</b></string>
+    <string name="spane_explaination4"><b>4/ Often</b></string>
+    <string name="spane_explaination5"><b>5/ Very often or always</b></string>
+    
+    <string name="panas_short_question"><b>To what extent do you generally feel</b></string>
+    <string name="panas_short_explaination1"><b>1/ Never</b></string>
+    <string name="panas_short_explaination2"><b>2/ Rarely</b></string>
+    <string name="panas_short_explaination3"><b>3/ Sometimes</b></string>
+    <string name="panas_short_explaination4"><b>4/ Often</b></string>
+    <string name="panas_short_explaination5"><b>5/ Always</b></string>
+    
+    <string name="panas_long_question"><b>Indicate to what extent you feel this way</b></string>
+    <string name="panas_long_explaination1"><b>1/ Very slightly or not at all</b></string>
+    <string name="panas_long_explaination2"><b>2/ A little</b></string>
+    <string name="panas_long_explaination3"><b>3/ Moderately</b></string>
+    <string name="panas_long_explaination4"><b>4/ Quite a bit</b></string>
+    <string name="panas_long_explaination5"><b>5/ Extremely</b></string>
+    
+    <string name="pam_instruction"><b>Touch how you feel</b></string>
+    <string name="load_more">Load more images</string>
+    
+    <string name="positive"><b>Positive</b></string>
+    <string name="negative"><b>Negative</b></string>
+    <string name="good"><b>Good</b></string>
+    <string name="bad"><b>Bad</b></string>
+    <string name="pleasant"><b>Pleasant</b></string>
+    <string name="unpleasant"><b>Unpleasant</b></string>
+    <string name="happy"><b>Happy</b></string>
+    <string name="sad"><b>Sad</b></string>
+    <string name="afraid"><b>Afraid</b></string>
+    <string name="joyful"><b>Joyful</b></string>
+    <string name="angry"><b>Angry</b></string>
+    <string name="contented"><b>Contented</b></string>
+    
+    <string name="upset"><b>Upset</b></string>
+    <string name="hostile"><b>Hostile</b></string>
+    <string name="alert"><b>Alert</b></string>
+    <string name="ashamed"><b>Ashamed</b></string>
+    <string name="inspired"><b>Inspired</b></string>
+    <string name="nervous"><b>Nervous</b></string>
+    <string name="determined"><b>Determined</b></string>
+    <string name="attentive"><b>Attentive</b></string>
+    <string name="active"><b>Active</b></string>
+    <string name="interested"><b>Interested</b></string>
+    <string name="distressed"><b>Distressed</b></string>
+    <string name="excited"><b>Excited</b></string>
+    <string name="strong"><b>Strong</b></string>
+    <string name="guilty"><b>Guilty</b></string>
+    <string name="scared"><b>Scared</b></string>
+    <string name="enthusiastic"><b>Enthusiastic</b></string>
+    <string name="proud"><b>Proud</b></string>
+    <string name="irritable"><b>Irritable</b></string>
+    <string name="jittery"><b>Jittery</b></string>
+    
+	<string name="num1"><b>1</b></string>
+	<string name="num2"><b>2</b></string>
+	<string name="num3"><b>3</b></string>
+	<string name="num4"><b>4</b></string>
+	<string name="num5"><b>5</b></string>
+	
+</resources>

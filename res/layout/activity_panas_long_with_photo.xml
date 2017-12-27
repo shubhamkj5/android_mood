@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Silver"
+    android:weightSum="100"
+     >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="20" >
+
+	    <TextView
+	        android:id="@+id/panasLongQuestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:text="@string/panas_long_question"
+	        android:textColor="@color/Blue" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        android:layout_marginLeft="5dp"
+	        android:orientation="horizontal">
+        	
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2">
+			     <TextView
+			        android:id="@+id/panasLongExplaination1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_long_explaination1"
+			        android:textColor="@color/Blue" />
+			</LinearLayout>
+			
+	        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasLongExplaination2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_long_explaination2"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+	     </LinearLayout>
+	     
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:weightSum="3">
+        	
+		    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			         android:id="@+id/panasLongExplaination3"
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:text="@string/panas_long_explaination3"
+			         android:textColor="@color/Blue" />
+			</LinearLayout>
+			
+		     <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasLongExplaination4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_long_explaination4"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+		     
+		      <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1">
+			     <TextView
+			        android:id="@+id/panasLongExplaination5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/panas_long_explaination5"
+			        android:textColor="@color/Blue" />
+		     </LinearLayout>
+	     </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoInterested"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_interested3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongInterested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/interested"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongInterested"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoDistressed"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_distressed3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongDistressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/distressed"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongDistressed"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoExcited"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_excited3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongExcited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/excited"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongExcited"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoUpset"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_upset3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongUpset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/upset"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongUpset"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoStrong"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_strong3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongStrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/strong"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongStrong"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoGuilty"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_guilty3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongGuilty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/guilty"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongGuilty"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoScared"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_scared3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongScared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/scared"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongScared"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoHostile"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_hostile3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongHostile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/hostile"
+                android:textColor="@color/Blue" />
+
+			<SeekBar
+                android:id="@+id/seekBarPANASLongHostile"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+			
+			<ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoEnthusiastic"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_enthusiastic3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongEnthusiastic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/enthusiastic"
+                android:textColor="@color/Blue" />
+
+			<SeekBar
+                android:id="@+id/seekBarPANASLongEnthusiastic"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+			
+			<ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoProud"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_proud3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongProud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/proud"
+                android:textColor="@color/Blue" />
+
+			<SeekBar
+                android:id="@+id/seekBarPANASLongProud"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+			
+			<ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoIrritable"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_irritable3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongIrritable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/irritable"
+                android:textColor="@color/Blue" />
+
+			<SeekBar
+                android:id="@+id/seekBarPANASLongIrritable"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+			
+			<ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoAlert"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_alert3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/alert"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongAlert"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoAshamed"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_ashamed3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASShortAshamed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/ashamed"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongAshamed"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoInspired"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_inspired3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongInspired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/inspired"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongInspired"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoNervous"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_nervous3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViePANASLongNervous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/nervous"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongNervous"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoDetermined"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_determined3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongDetermined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/determined"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongDetermined"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoAttentive"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_attentive3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongAttentive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/attentive"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongAttentive"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoJittery"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_jittery3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongJittery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/jittery"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongJittery"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoActive"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_active3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/active"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongActive"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+            
+            <ImageView
+                android:id="@+id/imageViewPANASLongWithPhotoAfraid"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/panas_afraid3">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/textViewPANASLongAfraid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:text="@string/afraid"
+                android:textColor="@color/Blue" />
+
+            <SeekBar
+                android:id="@+id/seekBarPANASLongAfraid"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:progress="2"
+                android:max="4" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonNotePANASLongWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSharePANASLongWithPhoto"
+        	android:layout_alignBottom="@+id/buttonSharePANASLongWithPhoto"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/note_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonSharePANASLongWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSavePANASLongWithPhoto"
+        	android:layout_alignBottom="@+id/buttonSavePANASLongWithPhoto"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="40dp"
+            android:background="@drawable/share_icon_effect"
+             />
+
+        <Button
+            android:id="@+id/buttonSavePANASLongWithPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginBottom="18dp"
+        	android:layout_marginLeft="40dp"
+            android:background="@drawable/save_icon_effect"
+             />
+
+    </RelativeLayout>
+    
+</LinearLayout>

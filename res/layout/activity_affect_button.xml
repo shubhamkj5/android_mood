@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:id="@+id/RelativeLayoutAffectButton" >
+
+    <TextView
+        android:id="@+id/myCurrentMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttonNote"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/Blue"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/save_icon_effect"
+         />
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/buttonSave"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/share_icon_effect"
+         />
+
+    <Button
+        android:id="@+id/buttonNote"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/buttonShare"
+        android:layout_alignBottom="@+id/buttonShare"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/note_icon_effect"
+         />
+
+    <TextView
+        android:id="@+id/myMoodGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/my_mood_greeting"
+        android:textColor="@color/Blue"
+        android:textSize="20sp" />
+
+</RelativeLayout>

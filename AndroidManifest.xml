@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.affectassessment"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.affectassessment.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ReportMoodActivity"
+            android:label="@string/report_mood"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".AffectButtonActivity"
+            android:label="@string/affect_button"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".SPANEWithPhotoActivity"
+            android:label="@string/spane_with_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".SPANENoPhotoActivity"
+            android:label="@string/spane_no_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".PANASShortNoPhotoActivity"
+            android:label="@string/panas_short_no_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".PANASLongWithPhotoActivity"
+            android:label="@string/panas_long_with_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".PAMActivity"
+            android:label="@string/pam"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="@string/statistics"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".AffectButtonStatActivity"
+            android:label="@string/affect_button_statistics"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".SPANEWithPhotoStatActivity"
+            android:label="@string/spane_with_photo_statistics"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".PANASShortNoPhotoStatActivity"
+            android:label="@string/panas_short_no_photo_statistics"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".PAMStatActivity"
+            android:label="@string/pam_statistics"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name="org.achartengine.GraphicalActivity"
+            android:label="@string/statistics"
+            android:screenOrientation="landscape" />
+        
+    </application>
+
+</manifest>

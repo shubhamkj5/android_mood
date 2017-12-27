@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pamInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pam_instruction"
+            android:textColor="@color/Blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="68" >
+
+        <com.example.affectassessment.ScrollableGridView
+            android:id="@+id/gridViewPAM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+             >
+        </com.example.affectassessment.ScrollableGridView>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSavePAM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/save_icon_effect" />
+
+        <Button
+            android:id="@+id/buttonNotePAM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSharePAM"
+            android:layout_alignBottom="@+id/buttonSharePAM"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/note_icon_effect" />
+
+        <Button
+            android:id="@+id/buttonSharePAM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonSavePAM"
+            android:layout_alignBottom="@+id/buttonSavePAM"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/share_icon_effect" />
+
+        <Button
+            android:id="@+id/buttonLoadMorePAM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/buttonNotePAM"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/change_icon_effect" />
+    </RelativeLayout>
+
+</LinearLayout>
